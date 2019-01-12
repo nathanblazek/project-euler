@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
         <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <script src="common.js"></script>
         <?php if($project){?><script src="js/<?php echo $project; ?>.js"></script><?php } ?>
     </head>
     <body>
@@ -49,8 +50,9 @@
             <p><pre id="projectOutput"></pre></p>
             <h2>Code</h2>
             <p><pre><code><?php 
-echo file_get_contents('./js/'.$project.'.js', FILE_USE_INCLUDE_PATH);
+echo htmlspecialchars(file_get_contents('./js/'.$project.'.js', FILE_USE_INCLUDE_PATH));
             ?></code></pre></p>
+            <small>This answer may include functions that are added to the <a href="common.js">common javascript file</a></small>
           <?php } else {?>
             <h1>Welcome to Project Euler!</h1>
             <p>This is a dumping ground to execute project euler code. This way, I can avoid recreating a basic index.html file and can just get to work. Click a link on the left to see my code.</p>
