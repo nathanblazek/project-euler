@@ -11,24 +11,17 @@ function execute(){
 
     while(a < 1000){
         while(b < 1000 && b > a){
-            c = a + b;
-
-            if(c > 1000)
-                break;
-
-            if(c == 1000 && a < b){
-                if (Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(1000, 2)) {
-                    output("a = " + a);
-                    output("b = " + b);
-                    output("c = " + c);
-                    output("sum of abc = "+ a * b * c);
-                }
-            }
+            c = 1000 - a - b;
+              
+            if ((a*a) + (b*b) === (c*c)) {
+                output("a = " + a);
+                output("b = " + b);
+                output("c = " + c);
+                output("sum of abc = "+ a * b * c);
+            }          
             b++;
         }
-
         a++;
         b = a + 1;
     }
-    console.log('done');
 }
