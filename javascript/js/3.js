@@ -1,5 +1,6 @@
 var lesson = {
     "number":3,
+    "result":"6857",
     "description": "The prime factors of 13195 are 5, 7, 13 and 29.\n\nWhat is the largest prime factor of the number 600851475143 ?"
 }
 

@@ -1,6 +1,6 @@
 var lesson = {
     "number":4,
-    "pass":true,
+    "result":"906609",
     "description": "A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\nFind the largest palindrome made from the product of two 3-digit numbers."
 }
 
